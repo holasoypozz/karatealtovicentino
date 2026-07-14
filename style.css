@@ -319,35 +319,24 @@ h1, h2, h3 {
   box-shadow: var(--shadow);
 }
 
-.schedule-card h3 {
-  font-size: 1.5rem;
-  color: var(--ink);
-  margin: 0 0 10px 0;
-  line-height: 1.05;
-}
-
-.schedule-desc {
-  color: var(--muted);
-  margin: 0 0 18px 0;
-  font-size: 0.95rem;
-}
-
 .schedule-days {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  color: var(--gray);
-  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 4px 0;
 }
 
 .schedule-time {
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 2px 0 0 0;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--red);
+  margin: 0 0 10px 0;
 }
+
+.schedule-card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.schedule-card p:last-child { color: var(--muted); margin: 0; font-size: 0.92rem; }
 
 .callout {
   margin-top: 28px;
@@ -452,52 +441,23 @@ h1, h2, h3 {
 .project-body a { color: var(--red); text-decoration: none; font-weight: 600; }
 .project-body a:hover { text-decoration: underline; }
 
-/* Badge FIJLKAM in header */
-.fijlkam-badge {
-  height: 34px;
-  width: auto;
-  display: block;
-}
-
-.affiliation-logo {
-  max-width: 340px;
-  width: 100%;
-  height: auto;
-}
-
 /* Sponsor */
-.sponsor-grid {
+.sponsor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 18px;
-  align-items: stretch;
+  gap: 14px;
 }
 
-.sponsor-logo-card {
-  background: var(--card);
+.sponsor-list li {
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 20px 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 220px;
-  min-height: 110px;
-}
-
-.sponsor-logo-card img {
-  max-width: 100%;
-  max-height: 70px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
-
-.sponsor-logo-card--text span {
+  border-radius: 999px;
+  padding: 10px 18px;
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: 1.05rem;
+  font-size: 0.85rem;
   letter-spacing: 0.03em;
   color: var(--muted);
 }
@@ -596,8 +556,6 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 768px) {
-  .fijlkam-badge { height: 24px; }
-
   .mobile-menu-btn { display: inline-block; }
 
   .nav {
